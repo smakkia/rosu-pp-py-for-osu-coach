@@ -837,6 +837,14 @@ class DifficultyAttributes:
         """
 
     @property
+    def reading_difficult_note_count(self) -> float | None:
+        """
+        The number of clickable objects weighted by reading difficulty.
+
+        Only available for osu!.
+        """
+
+    @property
     def aim_difficult_strain_count(self) -> float | None:
         """
         Weighted sum of aim strains.
@@ -938,7 +946,7 @@ class DifficultyAttributes:
         """
         The difficulty of the reading skill.
 
-        Only available for osu!taiko.
+        Only available for osu! and osu!taiko.
         """
 
     @property
@@ -1112,6 +1120,14 @@ class PerformanceAttributes:
         """
 
     @property
+    def pp_reading(self) -> float | None:
+        """
+        The reading portion of the final pp.
+
+        Only available for osu!.
+        """
+
+    @property
     def pp_accuracy(self) -> float | None:
         """
         The accuracy portion of the final pp.
@@ -1234,7 +1250,7 @@ class Strains:
     @property
     def reading(self) -> list[float] | None:
         """
-        Strain peaks of the reading skill in osu!taiko.
+        Strain peaks of the reading skill in osu! and osu!taiko.
         """
 
     @property

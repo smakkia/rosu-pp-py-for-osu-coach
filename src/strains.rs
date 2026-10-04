@@ -34,6 +34,7 @@ impl From<OsuStrains> for PyStrains {
             aim_no_sliders,
             speed,
             flashlight,
+            reading,
         } = strains;
 
         Self {
@@ -43,6 +44,7 @@ impl From<OsuStrains> for PyStrains {
             aim_no_sliders: Some(aim_no_sliders),
             speed: Some(speed),
             flashlight: Some(flashlight),
+            reading: Some(reading),
             ..Self::default()
         }
     }
